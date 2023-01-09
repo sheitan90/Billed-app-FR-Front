@@ -14,9 +14,11 @@ describe("Given that I am a user on login page", () => {
 
       const inputEmailUser = screen.getByTestId("employee-email-input");
       expect(inputEmailUser.value).toBe("");
+      //inputEmailUser.value = "employee@company.tld";
 
       const inputPasswordUser = screen.getByTestId("employee-password-input");
       expect(inputPasswordUser.value).toBe("");
+      //inputPasswordUser.value = "employee";
 
       const form = screen.getByTestId("form-employee");
       const handleSubmit = jest.fn((e) => e.preventDefault());
